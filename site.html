@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu site oh</title>
+    <style>
+        body {
+            font-family: Playfair Display;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #a7b5c7;
+        }
+        h1 {
+            color: #000000;
+            font-size: 2em;
+            text-align: center;
+            margin: 0 20px;
+        }
+        button {
+            color: #2441a0;
+            font-size: 1em;
+            text-align: center;
+            margin: 0 20px;
+        }
+        p {
+            color: #000000;
+            font-size: 1,5em;
+            text-align: center;
+            margin: 0 20px;
+        }
+
+        /* Ajustes de responsividade */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 id="mensagem"></h1>
+
+        <div class="container">
+            <h1>Exemplo de Alteração</h1>
+            <p id="minhaDiv">Este é o conteúdo original.</p>
+            <button onclick="alterarConteudo()">Alterar Conteúdo</button>
+        </div>
+    
+        <script>
+            function alterarConteudo() {
+                document.getElementById("minhaDiv").innerHTML = "<strong>Conteúdo alterado pelo JavaScript, parabéns!</strong>"; //strong
+            }
+        </script>
+</body>
+</html>
